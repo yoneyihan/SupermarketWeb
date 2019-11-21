@@ -24,8 +24,8 @@ public class ApplicationTests {
 
 	public void create() {
 		AdminAccount adminAccount = new AdminAccount();
-		adminAccount.setAdminName("韦工");
-		adminAccount.setUserName("wxl");
+		adminAccount.setAdminName("Dream rain");
+		adminAccount.setUserName("Her");
 		adminAccount.setPassword("123456");
 		adminAccount.setIsDefault(1);
 		adminAccount.setIsDeleted(0);
