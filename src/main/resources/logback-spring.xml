@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration  scan="true" scanPeriod="60 seconds" debug="false">
     <contextName>SupermarketWeb</contextName>
-    <property name="logback.path" value="log" />
+    <property name="logback.path" value="logs" />
     <property name="logback.infoPath" value="${logback.path}/info" />
     <property name="logback.errorPath" value="${logback.path}/error" />
     <property name="logback.fileName" value="SupermarketWeb" />
@@ -10,7 +10,7 @@
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%thread] %logger{36} -> %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%-20thread] %logger{36}: %msg%n</pattern>
         </encoder>
     </appender>
 
