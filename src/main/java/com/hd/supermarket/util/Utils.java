@@ -222,6 +222,17 @@ public final class Utils {
         return (a.compareTo(b) == -1) ? a : b;
     }
 
+    /**
+     * 最大值
+     * @param a 值一
+     * @param b 值二
+     * @param <T>
+     * @return
+     */
+    public static <T extends Comparable<T>> T max(T a, T b){
+        return (a.compareTo(b) == 1) ? a : b;
+    }
+
 
     public static String md5(String input) {
         if (input == null)
